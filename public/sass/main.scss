@@ -1,0 +1,16 @@
+@import './variables';
+@import './navbar';
+@import './index';
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow-x: hidden;
+    // background-color: $color-blue;
+    font-family: 'Libre Baskerville', serif;
+}
+

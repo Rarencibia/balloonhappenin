@@ -1,0 +1,45 @@
+nav {
+    background-color: $color-blue;
+    #logoImage {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        opacity: .70;   
+        border: 3px solid $color-purple;
+        box-shadow: 5px 5px 3px black;
+    }
+
+    ul {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+
+    a{
+        color: black;
+        text-decoration: none;
+
+    }
+
+
+    ul li {
+        list-style: none;
+        font-size: 2.5rem;
+        letter-spacing: 3px;
+        font-weight: 900;
+        text-shadow: 1px 1px 1px white;
+
+        &:hover{
+            text-shadow: 1px 1px 1px #6b38a6;
+            transition-property: transform;
+            transition: all;
+            transition-duration: 500ms;
+            transform: scale(1.1);
+        }
+
+    }
+
+
+}

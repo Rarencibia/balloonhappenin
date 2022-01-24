@@ -53,15 +53,15 @@ main {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: left;
-        align-items: center;
-        padding: 30px;
-        
+        justify-content: center;
+        align-items: center;        
+        margin-bottom: 30px;
+        margin-top: 30px;
     }
 
 
     .servicesImgWrapper{
-        width: 50%;
+        width: 70%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -80,7 +80,7 @@ main {
     }
 
     .servicesListedWrapper {
-        width: 100%;
+        width: 75%;
         height: 100%;
         text-align: center;
         padding: 10px;
@@ -97,38 +97,70 @@ main {
 
     .placesServicedContainer {
         width: 100%;
-        height: 400px;
-        margin-top: 100px;
-        display: flex;
-        justify-content: right;
-        align-items: center;
+        height: 500px;
         margin-bottom: 200px; /*Delete ME !!*/
-        padding: 30px;
+        background-color: $color-purple;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: auto;
+       
     }
 
     .centerServiceWrapper {
-        width: 50%;
-        height: 100%;
-        margin-right: 100px;
         text-align: center;
+        width: 60%;
+        height: 80%;
+        margin-right: 100px;
         font-size: .8rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
 
-    }
+        // background-color: red;
+        border-radius: 1%;
+        // box-shadow: 5px 5px 5px $color-black;
+        // border: 3px double $color-black;
 
-    .locationImg {
-        width: 30%;
-        border-radius: 30%;
     }
 
     .placesServicesList{
         display: flex;
         justify-content: space-between;
         align-items: center;
+        // background-image: url('../images/locationImg.jpg');
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // background-position: 50% 60%;
+    }
+
+    .placesServicedHeader {
+        color: white;
+        background-color: rgba(0,0,0,.5);
+        padding: 25px;
     }
     .placesServicesDiv {
-        border-radius: 50%;
-        border: 3px solid $color-purple;
+        margin: 30px;
+        border-radius: 30%;
+        border: 3px solid $color-pink;
         padding: 30px;
         background-color: $color-yellow;
+    }
+
+    .contactUsServices {
+        margin-top: 20px;
+        font-size: 1rem;
+        background-color: rgba(0,0,0,.5);
+        color: $color-white;
+        padding: 10px;
+    }
+
+    .contactUsServices a {
+        color: $color-blue;
+
+        &:hover {
+            color: $color-yellow;
+        }
     }
 }

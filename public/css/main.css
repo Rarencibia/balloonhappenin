@@ -1,15 +1,17 @@
+/*RGB rgb(107, 56, 166)*/
 nav {
   background-color: #5bccf6;
 }
 
 nav #logoImage {
-  width: 150px;
+  width: 180px;
   height: 150px;
+  padding: 5px;
   border-radius: 50%;
   opacity: .70;
   border: 3px solid #6b38a6;
-  -webkit-box-shadow: 5px 5px 3px black;
-          box-shadow: 5px 5px 3px black;
+  -webkit-box-shadow: inset 0px 0px 0px 3px #fcde67;
+          box-shadow: inset 0px 0px 0px 3px #fcde67;
 }
 
 nav ul {
@@ -124,9 +126,9 @@ main .servicesOfferedContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -134,25 +136,7 @@ main .servicesOfferedContainer {
 }
 
 main .servicesImgWrapper {
-  width: 30%;
-  height: 500px;
-}
-
-main .servicesImg {
-  width: 100%;
-  border-radius: 2%;
-  border: 3px solid #FFFFFF;
-  -webkit-box-shadow: 1px 1px 1px #FFFFFF;
-          box-shadow: 1px 1px 1px #FFFFFF;
-}
-
-main .servicesListedWrapper {
-  -webkit-clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-          clip-path: polygon(0% 0%, 100% 0%, 100% 75%, 75% 75%, 75% 100%, 50% 75%, 0% 75%);
-  width: 30%;
-  height: 450px;
-  background-color: #305ca3;
-  text-align: center;
+  width: 50%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -162,6 +146,80 @@ main .servicesListedWrapper {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  background-color: #fcde67;
+  border: 3px solid #6b38a6;
+  -webkit-box-shadow: 3px 3px 3px #030e12;
+          box-shadow: 3px 3px 3px #030e12;
+  border-radius: 1%;
+}
+
+main .servicesImg {
+  width: 100%;
+  height: 100%;
+}
+
+main .servicesListedWrapper {
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  padding: 10px;
+  font-size: .65rem;
+  line-height: 40px;
+}
+
+main .servicesListedWrapper h3 {
+  margin-top: 10%;
+  font-size: 1rem;
+}
+
+main .placesServicedContainer {
+  width: 100%;
+  height: 400px;
+  margin-top: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 200px;
+  /*Delete ME !!*/
+  padding: 30px;
+}
+
+main .centerServiceWrapper {
+  width: 50%;
+  height: 100%;
+  margin-right: 100px;
+  text-align: center;
+  font-size: .8rem;
+}
+
+main .locationImg {
+  width: 30%;
+  border-radius: 30%;
+}
+
+main .placesServicesList {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .placesServicesDiv {
+  border-radius: 50%;
+  border: 3px solid #6b38a6;
+  padding: 30px;
+  background-color: #fcde67;
 }
 
 * {

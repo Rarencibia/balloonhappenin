@@ -1,3 +1,5 @@
+
+/*Main image and introductory text the user will first see below the navbar*/
 .topIntroWrapper {
     width: 100%;
     height: 500px;
@@ -5,6 +7,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 
     #introImg {
         position: absolute;
@@ -43,124 +46,174 @@
 
 }
 
+/*Main Image end*/
+
+
+
+/*Start of main/body of content*/
 main {
+    /*Handles default styling for anything in the body*/
     width: 100%;
-    background-color: $color-blue;
-    
+    background-color: white;
+    /*Default styling end*/
 
-    
-    .servicesOfferedContainer {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;        
-        margin-bottom: 30px;
-        margin-top: 30px;
+    .three-product-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: 1fr;
+        grid-column-gap: 80px;
+        width: 95%;
+        margin: auto;
+        // background-color: $color-blue;
     }
 
-
-    .servicesImgWrapper{
-        width: 70%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: rgba(252,222,103,7);
-        border: 3px solid $color-purple;
-        box-shadow: 3px 3px 3px $color-black;
-        border-radius: 1%;
-
-
-
-    }
-
-    .servicesImg {
-        width: 100%;
-        height: 100%;
-    }
-
-    .servicesListedWrapper {
-        width: 75%;
-        height: 100%;
-        text-align: center;
-        padding: 10px;
-        font-size: .65rem;
-        line-height: 40px;
-
-    }
-
-    .servicesListedWrapper h3 {
-        margin-top: 10%;
-        font-size: 1rem;
-    }
-
-
-    .placesServicedContainer {
-        width: 100%;
-        height: 500px;
-        margin-bottom: 200px; /*Delete ME !!*/
-        background-color: $color-purple;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        overflow: auto;
-       
-    }
-
-    .centerServiceWrapper {
-        text-align: center;
-        width: 60%;
-        height: 80%;
-        margin-right: 100px;
-        font-size: .8rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-direction: column;
-
-        // background-color: red;
-        border-radius: 1%;
-        // box-shadow: 5px 5px 5px $color-black;
-        // border: 3px double $color-black;
-
-    }
-
-    .placesServicesList{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        // background-image: url('../images/locationImg.jpg');
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // background-position: 50% 60%;
-    }
-
-    .placesServicedHeader {
-        color: white;
-        background-color: rgba(0,0,0,.5);
-        padding: 25px;
-    }
-    .placesServicesDiv {
-        margin: 30px;
-        border-radius: 30%;
-        border: 3px solid $color-pink;
+    .three-product__containers{
         padding: 30px;
-        background-color: $color-yellow;
+        background: rgb(91,204,246);
+        background: linear-gradient(0deg, rgba(91,204,246,1) 15%, rgba(255,255,255,1) 100%);
     }
 
-    .contactUsServices {
-        margin-top: 20px;
-        font-size: 1rem;
-        background-color: rgba(0,0,0,.5);
-        color: $color-white;
-        padding: 10px;
+    .three-product__text {
+        text-align: center;
+        font-size: 1.2rem;
     }
 
-    .contactUsServices a {
-        color: $color-blue;
-
-        &:hover {
-            color: $color-yellow;
-        }
+    .three-product__text h1 {
+        text-decoration: underline;
+        text-shadow: 2px 2px 2px $color-pink;
+        margin-bottom: 30px;
     }
+
+    .three-product__text p {
+        color: $color-black;
+        line-height: 2rem;
+        letter-spacing: .8 rem;
+        text-shadow: 1px 1px 1px $color-white;
+
+    }
+
+
+
+
+
+    /*Gallery link and call to action.*/
+    // .servicesOfferedContainer {
+    //     width: 100%;
+    //     height: 100%;
+    //     display: flex;
+    //     justify-content: center;
+    //     align-items: center;        
+    //     margin-bottom: 30px;
+    //     margin-top: 30px;
+    // }
+
+
+    // .servicesImgWrapper{
+    //     width: 75%;
+    //     display: flex;
+    //     flex-direction: row-reverse;
+    //     align-items: center;
+    //     justify-content: center;
+    //     background-color: rgba(252,222,103,7);
+    //     border: 3px solid $color-purple;
+    //     box-shadow: 3px 12px 5px $color-black;
+    //     border-radius: 1%;
+
+
+
+    // }
+
+    // .servicesImg {
+    //     width: 40%;
+    //     height: 100%;
+    // }
+
+    // .servicesListedWrapper {
+    //     width: 75%;
+    //     height: 100%;
+    //     text-align: center;
+    //     padding: 10px;
+    //     font-size: .65rem;
+    //     line-height: 40px;
+
+    // }
+
+    // .servicesListedWrapper h3 {
+    //     margin-top: 10%;
+    //     font-size: 1rem;
+    // }
+    /*End Object*/
+
+
+//     .placesServicedContainer {
+//         width: 100%;
+//         height: 500px;
+//         margin-bottom: 200px; /*Delete ME !!*/
+//         // background-color: $color-blue;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         overflow: auto;
+       
+//     }
+
+//     .centerServiceWrapper {
+//         text-align: center;
+//         width: 60%;
+//         height: 80%;
+//         margin-right: 100px;
+//         font-size: .8rem;
+//         display: flex;
+//         align-items: center;
+//         justify-content: center;
+//         flex-direction: column;
+
+//         // background-color: red;
+//         border-radius: 1%;
+//         // box-shadow: 5px 5px 5px $color-black;
+//         // border: 3px double $color-black;
+
+//     }
+
+//     .placesServicesList{
+//         display: flex;
+//         justify-content: space-between;
+//         align-items: center;
+//         // background-image: url('../images/locationImg.jpg');
+//         // background-repeat: no-repeat;
+//         // background-size: cover;
+//         // background-position: 50% 60%;
+//     }
+
+//     .placesServicedHeader {
+//         color: white;
+//         background-color: rgba(0,0,0,.5);
+//         padding: 25px;
+//     }
+//     .placesServicesDiv {
+//         text-shadow: 1px 1px 1px $color-blue;
+//         font-size: 1.5rem;
+//         box-shadow: 3px 3px 3px $color-black;
+//         margin: 30px;
+//         border-radius: 30%;
+//         border: 3px solid $color-pink;
+//         padding: 30px;
+//         background-color: $color-yellow;
+//     }
+
+//     .contactUsServices {
+//         margin-top: 20px;
+//         font-size: 1rem;
+//         background-color: rgba(0,0,0,.5);
+//         color: $color-white;
+//         padding: 10px;
+//     }
+
+//     .contactUsServices a {
+//         color: $color-blue;
+
+//         &:hover {
+//             color: $color-yellow;
+//         }
+//     }
 }

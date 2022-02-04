@@ -24,6 +24,11 @@ nav {
         color: black;
         text-decoration: none;
 
+        &:hover {
+            color: $color-yellow;
+
+        }
+
     }
 
 
@@ -35,7 +40,8 @@ nav {
         text-shadow: 1px 1px 1px white;
 
         &:hover{
-            text-shadow: 1px 1px 1px #6b38a6;
+            border-top: 2px solid $color-purple;
+            text-shadow: 2px 2px 2px #6b38a6;
             transition-property: transform;
             transition: all;
             transition-duration: 500ms;

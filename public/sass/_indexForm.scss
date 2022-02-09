@@ -6,8 +6,10 @@
 
     form {
         background-image: url("../images/formBackground.jpg");
-        object-fit: contain;
+        background-size: cover;
         background-position: center;
+        background-repeat: no-repeat;
+        background-blend-mode: darken;
         margin-top: 100px;
         margin-bottom: 100px;
         width: 80%;

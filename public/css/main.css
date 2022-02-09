@@ -80,9 +80,109 @@ nav ul li:hover {
 }
 
 footer {
+  position: relative;
+}
+
+footer .footer-container-logo {
+  position: relative;
   width: 100%;
-  height: auto;
-  background-color: #6b38a6;
+  z-index: 1;
+  padding: 20px;
+  background-color: rgba(6, 54, 212, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-shadow: 3px 3px 3px #030e12;
+          box-shadow: 3px 3px 3px #030e12;
+  text-shadow: 3px 3px 3px #030e12;
+}
+
+footer .footer_color_bar {
+  position: absolute;
+  z-index: 1;
+  left: 40%;
+  top: 1%;
+  width: 15%;
+  height: 50px;
+  background-color: rgba(252, 222, 103, 0.2);
+  -webkit-transform: skewY(15deg);
+          transform: skewY(15deg);
+}
+
+footer #footer_color_bar2 {
+  left: 45%;
+}
+
+footer #footer_color_bar3 {
+  left: 35%;
+}
+
+footer .footer_logo {
+  z-index: 1;
+  font-style: italic;
+  font-family: 'Cookie', cursive;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: capitalize;
+}
+
+footer .footer-policy-background-color {
+  position: relative;
+  width: 100%;
+  background-color: #0636D4;
+  z-index: 1;
+  /*Z index change here*/
+  overflow: hidden !important;
+}
+
+footer .footer-container-policy {
+  position: relative;
+  width: 100%;
+  padding: 30px;
+  background-color: #fcde67;
+  border-end-end-radius: 80%;
+  -webkit-box-shadow: 1px 1px 3px #030e12;
+          box-shadow: 1px 1px 3px #030e12;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 100px;
+}
+
+footer .footer-container-policy a {
+  position: relative;
+  font-size: 1rem;
+  text-decoration: none;
+  text-shadow: 1px 1px 1px white;
+}
+
+footer .footer-container-policy a :hover {
+  cursor: pointer;
+}
+
+footer .footer_end {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  top: 87.1%;
+  background-color: rgba(6, 54, 212, 0.7);
+  z-index: 3;
+}
+
+footer .footer-container-policy h3 {
+  color: black;
 }
 
 /*Main image and introductory text the user will first see below the navbar*/
@@ -268,9 +368,10 @@ main .moon-image {
 
 .form-container form {
   background-image: url("../images/formBackground.jpg");
-  -o-object-fit: contain;
-     object-fit: contain;
+  background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-blend-mode: darken;
   margin-top: 100px;
   margin-bottom: 100px;
   width: 80%;
@@ -362,6 +463,9 @@ main .moon-image {
   padding: 0;
   border: 0;
   overflow-x: hidden;
+}
+
+body {
   font-family: 'Libre Baskerville', serif;
 }
 /*# sourceMappingURL=main.css.map */

@@ -1,5 +1,95 @@
 footer {
-    width: 100%;
-    height: auto;
-    background-color: $color-purple;
+    position: relative;
+
+
+    .footer-container-logo {
+        position: relative;
+        width: 100%;
+        z-index: 1;
+        padding: 20px;
+        background-color: rgba(6,54,212,.5);
+        display: flex;
+        align-items: center ;
+        justify-content: center;    
+        box-shadow: 3px 3px 3px $color-black;
+        text-shadow: 3px 3px 3px $color-black;
+
+    }
+
+    .footer_color_bar {
+        position: absolute;
+        z-index: 1;
+        left: 40%;
+        top: 1%;
+        width: 15%;
+        height: 50px;
+        background-color: rgba(252,222,103, .2);
+        transform: skewY(15deg);
+    }
+
+    #footer_color_bar2 {
+        left: 45%;
+    }
+
+    #footer_color_bar3 {
+        left: 35%;
+    }
+
+
+    .footer_logo {
+        z-index: 1;
+        font-style: italic;
+        font-family: 'Cookie', cursive;
+        color: white;
+        letter-spacing: 3px;
+        text-transform: capitalize;
+    }
+
+    .footer-policy-background-color{
+        position: relative;
+        width: 100%;
+        background-color: $color-dark-blue;
+        z-index: 1; /*Z index change here*/
+        overflow: hidden!important;
+    }
+
+    .footer-container-policy{
+        position: relative;
+        width: 100%;
+        padding: 30px;
+        background-color: $color-yellow;
+        border-end-end-radius: 80%;
+        box-shadow: 1px 1px 3px $color-black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 100px;
+
+    }
+
+
+    .footer-container-policy a {
+        position: relative;
+        font-size: 1rem;
+        text-decoration: none;
+        text-shadow: 1px 1px 1px white;
+        :hover {
+            cursor: pointer;
+        }
+    }
+
+    .footer_end {
+        position: absolute;
+        width: 100%;
+        height: 50px;
+        top: 87.1%;
+        background-color: rgba(6,54,212,.7);
+        z-index: 3;
+
+
+    }
+
+    .footer-container-policy h3{
+        color: black;
+    }
 }

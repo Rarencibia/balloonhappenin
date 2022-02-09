@@ -62,7 +62,7 @@
                     </div>
                     <div class="form-text">
                         <label class="label-long-message" for="longMessage">Message us:</label>
-                        <textarea class="long-message" name="longMessage" id="longMessage" cols="30" rows="10">Tell us about your event</textarea>
+                        <textarea class="form-message" name="formMessage" id="formMessage" cols="30" rows="10" onfocus = 'if(this.value == "Tell us about your event"){this.value = ""}' onblur='if(this.value == ""){this.value = "Tell us about your event"}'>Tell us about your event</textarea>
                     </div>
                 </div>
             </form>
@@ -98,3 +98,5 @@
         </div>
     </div>
 </main>
+
+<script src="javascripts/formMessageClear.js"></script>

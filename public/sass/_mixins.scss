@@ -1,0 +1,10 @@
+@mixin bounceAnimation($position1, $position2) {
+    @keyframes bounce {
+        0% {
+            transform: translate(0, 1px);
+        }
+        50% {
+            transform: translate(0, 6px);
+        }
+    }
+}

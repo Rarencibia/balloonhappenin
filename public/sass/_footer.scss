@@ -51,33 +51,58 @@ footer {
         background-color: $color-dark-blue;
         z-index: 1; /*Z index change here*/
         overflow: hidden!important;
+
+
     }
 
     .footer-container-policy{
         position: relative;
         width: 100%;
+        height: 100%;
         padding: 30px;
         background-color: $color-yellow;
         border-end-end-radius: 80%;
         box-shadow: 1px 1px 3px $color-black;
         display: flex;
-        justify-content: center;
+        justify-content: space-between;
         align-items: center;
-        gap: 100px;
 
     }
+
+    .footer_policy_links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        padding: 10px;
+    }
+
+    .footer_policy_links a {
+        &:hover {
+            color: $color-blue;
+            text-shadow: 1px 1px 1px $color-black;
+        }
+    }
+
 
 
     .footer-container-policy a {
         position: relative;
-        font-size: 1rem;
+        font-size: .5rem;
         text-decoration: none;
         text-shadow: 1px 1px 1px white;
-        :hover {
-            cursor: pointer;
-        }
     }
 
+    .social-media-container{
+        width: 20%;
+        margin-left: 100px;
+    }
+
+    .social-media-container img{
+        width: 50px;
+    }
+
+    /*Footer end just for styles only*/
     .footer_end {
         position: absolute;
         width: 100%;
